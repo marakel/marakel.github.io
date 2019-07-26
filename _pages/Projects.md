@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /Projects/
+permalink: /projects/
 title: "Project Posts by Tags"
 author_profile: true
 header:
@@ -16,3 +16,4 @@ header:
     {% include archive-single.html %}
   {% endfor %}
 {% endfor %}
+
