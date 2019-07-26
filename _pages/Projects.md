@@ -4,9 +4,8 @@ permalink: /projects/
 title: "Project Posts by Tags"
 author_profile: true
 header:
-    image: ""
+    image: "/images/city.jpg"
 ---
-{% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
 
 {% for tag in group_names %}
