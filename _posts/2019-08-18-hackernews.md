@@ -246,5 +246,5 @@ for avg, hr in sorted_swap[:5]:
 
 
 # Conclusion
-Based on this analysis, a post should be categorized as an "Ask HN" Post and be created between 15:00 and 16:00 (Which is 3:00pm - 4:00pm EST) to maximize the amount of comments it receives. It should be noted that I excluded any posts that received no comments, so this conclusion was came to only from data that included posts with comments. It would be more accurate to conclude that of the posts that received comments, Ask HN Posts received more on average and Ask Posts created between 15:00 and 16:00 recevied the most comments.
+Based on this analysis, a post should be categorized as an "Ask HN" Post and be created between 15:00 and 16:00 (Which is 3:00pm - 4:00pm EST) to maximize the amount of comments it receives. It should be noted that I excluded any posts that received no comments, so this conclusion was only from data that included posts with comments. It would be more accurate to conclude that of the posts that received comments, Ask HN Posts received more on average and Ask Posts created between 15:00 and 16:00 recevied the most comments.
 
