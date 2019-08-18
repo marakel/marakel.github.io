@@ -237,10 +237,15 @@ for avg, hr in sorted_swap[:5]:
 ```
 `
 Top 5 Hours for 'Ask HN' Comments
+
 15:00: 38.59 average comments per post
+
 02:00: 23.81 average comments per post
+
 20:00: 21.52 average comments per post
+
 16:00: 16.80 average comments per post
+
 21:00: 16.01 average comments per post
 `
 
