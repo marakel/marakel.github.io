@@ -5,15 +5,15 @@ tags: [python, data analysis]
 
 ---
 
-Some background information: Hacker News is a social news website focusing on computer science and entrepreneurship that contains posts that are upvoted or downvoted by popularity. The dataset I am using has been reduced to about 20,000 rows. (Posts were removed that did not receive any comments). 
+Some background information: Hacker News is a social news website focusing on computer science and entrepreneurship that contains posts that are upvoted or downvoted by popularity. The dataset I am using has been reduced to about 20,000 rows. Posts were removed that did not receive any comments.
 
-I am specifically analyzing "Ask HN" and "Show HN" post types. I am looking to determine whether each post type (Ask HN or Show HN) receives more comments on average. I will also be looking at whether the time the posts are created has an effect on the amount of comments it recevies. 
+I am specifically analyzing "Ask HN" and "Show HN" post types (HN just stands for Hacker News). I am looking to determine whether each post type (Ask HN or Show HN) receives more comments on average. I will also be looking at whether the time the posts are created has an effect on the amount of comments it recevies. 
 
 This is a simple project I am using to practice some basic data analysis in python. My later projects will utilize more of the python libraries and some prediction techniques.
 
 
 
-My first step is to upload the csv as a list of the rows. I am also removing the first row of the data, which are the headers.
+My first step is to upload the csv as a list of the rows. I am also removing the first row of the data which are the headers.
 ```python
 from csv import reader
 opened_file = open("hacker_news.csv")
@@ -65,7 +65,7 @@ print(len(other_posts))
 
 
 
-By calculating the average for each type of post we can see that Ask Posts in our sample receive about 14 comments while Show Posts only receive about 10 comments. Taking into account this large difference, I will focus on only Ask Posts for the rest of the analysis. 
+By calculating the average for each type of post we can see that Ask HN Posts in our sample receive about 14 comments while Show HN Posts only receive about 10 comments. Taking into account this large difference, I will focus on only Ask HN Posts for the rest of the analysis. 
 ```python
 #Calculating Average Number of Comments for each Post Type
 total_askhn_comments = 0
@@ -88,8 +88,9 @@ print(avg_showhn_comments)
 
 
 
-I am now trying to determine if we can maximize the amount of comments an Ask HN Post receives by creating it at a certain time. My first step was to find the amount of Ask Posts created in each hour of the day and the number of comments each has. Then I calculated the average amount of comments for each post at each hour of the day. 
-Note: The times listed can be converted to EST. For example, 13:00 is really 1pm EST. I determined this reading through the documentation for the dataset. I decided to leave the times in teh original format.
+I am now trying to determine if we can maximize the amount of comments an Ask HN Post receives by creating it at a certain time. My first step was to find the amount of Ask HN Posts created in each hour of the day and the number of comments each has. Then I calculated the average amount of comments for each post at each hour of the day. 
+
+Note: The times listed can be converted to EST. For example, 13:00 is really 1pm EST. I determined this reading through the documentation for the dataset. I decided to leave the times in the original format.
 ```python
 #Finding Amount of Posts/Comments by Hour Created
 import datetime as dt
@@ -246,5 +247,5 @@ for avg, hr in sorted_swap[:5]:
 
 
 # Conclusion
-Based on this analysis, a post should be categorized as an "Ask HN" Post and be created between 15:00 and 16:00 (Which is 3:00pm - 4:00pm EST) to maximize the amount of comments it receives. It should be noted that I excluded any posts that received no comments, so this conclusion was only from data that included posts with comments. It would be more accurate to conclude that of the posts that received comments, Ask HN Posts received more on average and Ask Posts created between 15:00 and 16:00 recevied the most comments.
+Based on this analysis, a post should be categorized as an "Ask HN" Post and be created between 15:00 and 16:00 (Which is 3:00pm - 4:00pm EST) to maximize the amount of comments it receives. It should be noted that I excluded any posts that received no comments, so this conclusion was only from data that included posts with comments. It would be more accurate to conclude that of the posts that received comments, Ask HN Posts received more comments on average and Ask HN Posts created between 15:00 and 16:00 recevied the most comments.
 
