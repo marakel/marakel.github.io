@@ -4,12 +4,11 @@ date: 2019-08-18
 tags: [python, data analysis]
 
 ---
+This is a simple project I am using to practice some basic data analysis in python. My future projects will utilize more of the python libraries and some prediction techniques.
 
 Some background information: Hacker News is a social news website focusing on computer science and entrepreneurship that contains posts that are upvoted or downvoted by popularity. The dataset I am using has been reduced to about 20,000 rows. Posts were removed that did not receive any comments.
 
 I am specifically analyzing "Ask HN" and "Show HN" post types (HN just stands for Hacker News). I am looking to determine whether each post type (Ask HN or Show HN) receives more comments on average. I will also be looking at whether the time the posts are created has an effect on the amount of comments it recevies. 
-
-This is a simple project I am using to practice some basic data analysis in python. My later projects will utilize more of the python libraries and some prediction techniques.
 
 
 
